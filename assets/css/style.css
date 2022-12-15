@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+@font-face{
+    font-family: Arimo;
+    src: url(../fonts/Arimo/static/Arimo-Regular.ttf);
+}
+@font-face{
+    font-family: Anton;
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+@font-face{
+    font-family: Caveat;
+    src: url(../fonts/Caveat/static/Caveat-Regular.ttf);
+}
+@font-face{
+    font-family: Dancing_Script;
+    src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+}
+.siteLogo{
+    width: 48px;
+    margin: 7px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: end;
+    column-gap: 15px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display: block;
+    color: #E9E2D4;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+body{
+    position: relative;
+    padding-bottom: 140px;
+    margin-top: 65px;
+    font-family: NotoSans-Regular;
+}
+header{
+    margin-top: 0px;
+}
+main{
+    background-color: #FFFEFE;
+}
+/*INICIO*/
+.imgIndex{
+    background-image: url(../img/fondoIndex2.jpg);
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexInfo{
+    text-align: center;
+    color:  #040706;
+    font-size: 25px;
+}
+.mainIndex{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.prodIndex{
+    display: inline-block;
+    width: 250px;
+    height: 290px;
+    border: solid 2px #FFFEFE;
+    border-radius: 8px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.prodIndex__img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.prodIndex__title{
+    text-align: center;
+}
+.prodIndex__price{
+    text-align: center;
+}
+.prodIndex__btn{
+    padding: 3px;
+    border: none;
+    background-color: #FFFEFE;
+}
+.benefits{
+    display: inline-block;
+    width: 250px;
+    border: solid 2px #FFFEFE;
+    border-radius: 8px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.benefits__img{
+    width: 80%;
+}
+.benefits__descrip{
+    text-align: center;
+    padding-top: 5px;
+}
+.titleSection{
+    padding-top: 85px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.linkProducts{
+    text-align: center;
+}
+.linkProducts a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #111111;
+    color: #FFFEFE;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;   
+}
+/*CIERRE INICIO*/
+.imgHead{
+    background-image: url(../img/fondoIndex2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*PRODUCTOS*/
+.category{
+    text-align: center;
+    color: #FFFEFE;
+    background-color: #161519;
+    padding: 15px;
+}
+.category p{
+    display: inline-block;
+    padding: 5px 15px;
+}
+.sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFFEFE;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.products{
+    display: inline-block;
+    width: 250px;
+    border: solid 2px #FFFEFE;
+    border-radius: 8px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.products__img{
+    width: 100%;
+    text-align: center;
+}
+.products__title{
+    text-align: center;
+}
+.products__price{
+    text-align: center;
+}
+.products__btn{
+    padding: 3px;
+    border: none;
+    background-color: #FFFEFE;   
+}
+/*CIERRE PRODUCTOS*/
+
+/*MATES PERSONALIZADOS*/
+.titleEx{
+    background-color: #161519;
+    text-align: center;
+    padding: 15px;
+    color: #FFFEFE;
+}
+.customEx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.customText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.custom{
+    width: 250px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.custom__img{
+    width: 100%;
+    text-align: center;
+}
+.custom__title{
+    text-align: center;
+}
+.custom__btn{
+    padding: 3px;
+    border: none;
+    background-color: #FFFEFE;   
+}
+.engraving{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+}
+.type1{
+    font-family: Anton;
+    font-size: 30px;
+    padding: 5px;
+}
+.type2{
+    font-family: Caveat;
+    font-size: 30px;
+    padding: 5px;
+}
+.type3{
+    font-family: Arimo;
+    font-size: 30px;
+    padding: 5px;
+}
+.type4{
+    font-family: Dancing_Script;
+    font-size: 30px;
+    padding: 5px;
+}
+.order{
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/*CIERRE MATES PERSONALIZADOS*/
+
+/*NOSOTROS*/
+.aboutUs{
+    background-color: #161519;
+    color: #FFFEFE;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.missionVision{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mission{
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px;
+    border: #111111 solid 2px;
+}
+.vision{
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px;
+    border: #111111 solid 2px;
+}
+/*CIERRE NOSOTROS*/
+
+/*CONTACTO*/
+.line{
+    background-color: #111111;
+    padding: 0px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 15px;
+}
+.contact fieldset{
+    padding: 20px; 
+    border: solid black 2px;   
+}
+.textContact{
+    height: 280px;
+    width: 100%;
+}
+.contact div{
+    border: solid black 2px;
+    padding: 15px;
+}
+/*CIERRE CONTACTO*/
+
+footer{
+    background-color: #111111;
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+}
+.networks{
+    display: block;
+    color: #FFFEFE;
+    margin-right: 45px;
+    padding: 10px;
+}
+.netLogo{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 45px;
+}
+.rights{
+    color: #FFFEFE;
+    text-align: center;
+    background-color: #161519;
+    padding: 15px 10px;
+}
+
