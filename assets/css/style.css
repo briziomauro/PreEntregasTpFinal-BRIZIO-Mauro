@@ -152,10 +152,8 @@ main{
     border-radius: 8px;
     width: 250px;   
 }
-.footerGridIndex{
-    grid-area: footer;
-}
 /*CIERRE INICIO*/
+
 .pageGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
