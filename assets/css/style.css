@@ -23,14 +23,20 @@
     font-family: Dancing_Script;
     src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
 }
+.indexGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 65px 900px 1fr 130px;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "header header header header"
+                          "main   main   main   main"
+                          "footer footer footer footer";
+}
 .navbar{
+    grid-area: nav;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 65px;
     background-color: #111111;
-    position: fixed;
-    top: 0;
 }
 .siteLogo{
     width: 48px;
@@ -51,21 +57,17 @@
 }
 body{
     position: relative;
-    padding-bottom: 140px;
-    margin-top: 65px;
     font-family: NotoSans-Regular;
 }
-header{
-    margin-top: 0px;
-}
+
 main{
     background-color: #FFFEFE;
 }
 /*INICIO*/
 .imgIndex{
+    grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
     width: 100%;
-    height: 900px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -77,6 +79,9 @@ main{
     text-align: center;
     color:  #040706;
     font-size: 25px;
+}
+.mainGridIndex{
+    grid-area: main;
 }
 .mainIndex{
     display: flex;
@@ -148,6 +153,9 @@ main{
     padding: 15px;
     border-radius: 8px;
     width: 250px;   
+}
+.footerGridIndex{
+    grid-area: footer;
 }
 /*CIERRE INICIO*/
 .imgHead{
@@ -343,9 +351,9 @@ main{
 footer{
     background-color: #111111;
     width: 100%;
-    height: 130px;
+
     text-align: right;
-    position: absolute;
+
     bottom: 0;
 }
 .networks{
