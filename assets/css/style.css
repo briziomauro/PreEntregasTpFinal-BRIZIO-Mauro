@@ -59,7 +59,6 @@ body{
     position: relative;
     font-family: NotoSans-Regular;
 }
-
 main{
     background-color: #FFFEFE;
 }
@@ -67,7 +66,6 @@ main{
 .imgIndex{
     grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
-    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -158,7 +156,17 @@ main{
     grid-area: footer;
 }
 /*CIERRE INICIO*/
+.pageGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 65px 200px 1fr 130px;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "header header header header"
+                          "main   main   main   main"
+                          "footer footer footer footer";
+}
 .imgHead{
+    grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
     background-size: cover;
     background-position: center;
@@ -168,6 +176,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.pageMain{
+    grid-area: main;
+}
+.pageFooter{
+    grid-area: footer;
 }
 /*PRODUCTOS*/
 .category{
@@ -350,10 +364,7 @@ main{
 
 footer{
     background-color: #111111;
-    width: 100%;
-
     text-align: right;
-
     bottom: 0;
 }
 .networks{
