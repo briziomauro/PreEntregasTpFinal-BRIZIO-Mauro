@@ -57,7 +57,7 @@
 }
 body{
     position: relative;
-    font-family: NotoSans-Regular;
+    font-family: NotoSans-Regular !important;
 }
 main{
     background-color: #FFFEFE;
@@ -314,21 +314,8 @@ main{
     text-align: center;
     font-size: 20px;
 }
-.missionVision{
-
-
-
-}
-.mission{
-    max-width: 400px;
-    padding: 15px;
-    margin: 20px;
-    border: #111111 solid 2px;
-}
-.vision{
-    max-width: 400px;
-    padding: 15px;
-    margin: 20px;
+.goals{
+    max-width: 350px;
     border: #111111 solid 2px;
 }
 /*CIERRE NOSOTROS*/
