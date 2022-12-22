@@ -36,7 +36,7 @@
     grid-area: nav;
     display: flex;
     justify-content: space-between;
-    background-color: #111111;
+    background-color: #111111 ;
 }
 .siteLogo{
     width: 48px;
@@ -315,9 +315,9 @@ main{
     font-size: 20px;
 }
 .missionVision{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+
+
 }
 .mission{
     max-width: 400px;
