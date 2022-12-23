@@ -40,8 +40,11 @@ body{
 .navbar{
     grid-area: nav;
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     background-color: #111111;
+    
 }
 .siteLogo{
     display: block;
@@ -215,7 +218,7 @@ main{
 .pageGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 65px 200px 1fr 130px;
+    grid-template-rows: 80px 200px 1fr 130px;
     grid-template-areas:  "nav    nav    nav    nav"
                           "header header header header"
                           "main   main   main   main"
