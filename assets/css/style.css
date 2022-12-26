@@ -23,6 +23,18 @@
     font-family: Dancing_Script;
     src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
 }
+
+body{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: NotoSans-Regular !important; 
+}
+main{
+    background-color: #FFFEFE;
+}
+/*------ GRID PARA PAGINA INCIO ------*/
 .indexGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -33,21 +45,9 @@
                           "footer footer footer footer";
 
 }
-.fontBoot{
-    font-family: NotoSans-Regular !important;
-    
-}
-.fontBoot h1{
-    font-size: 32px !important;
-}
-body{
-    position: relative;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    font-family: NotoSans-Regular !important; 
-}
-/*----BARRA DE NAVEGACION----*/
+/*------ GRID PARA PAGINA INCIO CIERRE ------*/
+
+/*-------- BARRA DE NAVEGACION CSS RESPONSIVE--------*/
 .cssNavbar{
     grid-area: nav;
     display: flex;
@@ -130,12 +130,9 @@ a.backColor,a:hover{
         left: 0;
     }
 }
-/*----CIERRE BARRA DE NAVEGACION----*/
+/*------- CIERRE BARRA DE NAVEGACION CSS RESPONSIVE --------*/
 
-main{
-    background-color: #FFFEFE;
-}
-/*INICIO*/
+/*------- PAGINA INICIO CSS ---------*/
 .imgIndex{
     grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
@@ -225,8 +222,9 @@ main{
     border-radius: 8px;
     width: 250px;   
 }
-/*CIERRE INICIO*/
+/*--------- CIERRE INICIO CSS ---------*/
 
+/*-------- GRID PARA PAGINAS CSS -------*/
 .pageGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -236,6 +234,7 @@ main{
                           "main   main   main   main"
                           "footer footer footer footer";
 }
+/*-------- CIERRE GRID PARA PAGINAS CSS -------*/
 .imgHead{
     grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
@@ -252,7 +251,7 @@ main{
     grid-area: main;
 }
 
-/*PRODUCTOS*/
+/*--------- PAGINA PRODUCTOS CSS ---------*/
 .category{
     text-align: center;
     color: #FFFEFE;
@@ -298,9 +297,9 @@ main{
     border: none;
     background-color: #FFFEFE;   
 }
-/*CIERRE PRODUCTOS*/
+/*--------- CIERRE PRODUCTOS CSS -----------*/
 
-/*MATES PERSONALIZADOS*/
+/*--------- MATES PERSONALIZADOS CSS ------------*/
 .titleEx{
     background-color: #161519;
     text-align: center;
@@ -375,110 +374,9 @@ main{
     padding: 15px;
     margin-top: 40px;
 }
-/*CIERRE MATES PERSONALIZADOS*/
+/*-------- CIERRE MATES PERSONALIZADOS CSS ---------*/
 
-/*---- BOOTSTRAP NOSOTROS ----*/
-.row,.container,.container-fluid{
-    margin: 0;
-    padding: 0;
-}
-.bootHeader{
-    background-image: url(../img/fondoIndex2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 210px;
-}
-.bootHeader h1{
-    min-height: 200px;
-}
-.goals{
-    max-width: 500px;
-    border: solid black 2px;
-}
-.us{
-    background-color: #111111;
-    color: white;
-}
-/*---- CIERRE BOOTSTRAP NOSOTROS ----*/
-
-
-
-/*---- BOOTSTRAP CONTACTO ----*/
-.line{
-    background-color: #111111;
-    padding: 0px;
-}
-.contact{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 15px;
-}
-.contact fieldset{
-    padding: 20px; 
-    border: solid black 2px;   
-}
-.textContact{
-    height: 280px;
-    width: 100%;
-}
-.contact div{
-    border: solid black 2px;
-    padding: 15px;
-}
-/*---- CIERRE BOOTSTRAP CONTACTO ----*/
-
-/*BOOTSTRAP NAV*/
-.navbar{
-    background-color: #111111 !important;
-    height: 80px;
-}
-.navbar-toggler-icon{
-    color: white !important;
-    text-decoration: none !important;
-}
-.navbar-brand{
-    font-size: 35px;
-    padding: 0 100px;
-}
-.nav-link{
-    font-size: 17px;
-}
-.navbar a{
-    color: white;
-}
-.navbar-nav a:hover{
-    background-color: #1A191C !important;
-    color: white;
-    border-radius: 5px;
-}
-.bootColor{
-    background-color: #1A191C;
-    border-radius: 5px !important;
-}
-.navbar-collapse{
-    background-color: #111111;
-
-}
-/*CIERRE BOOOTSTRAP NAV*/
-
-/*---- BOOTSTRAP FOOTER ----*/
-.bootFooter{
-    background-color: #111111;
-    color: white;
-    font-size: 16px !important;
-}
-.rights{
-    background-color: #161519;
-    color: white;
-}
-/*---- CIERRE BOOTSTRAP FOOTER ----*/
-
-/*----FOOTER----*/
+/*-------- FOOTER RESPONSIVE CSS --------*/
 .pageFooter{
     grid-area: footer;
     background-color: #111111;
@@ -559,5 +457,117 @@ main{
                               "footer footer footer footer";
     }
 }
-/*----CIERRE FOOTER----*/
+/*------- CIERRE FOOTER RESPONSIVE CSS --------*/
+
+/*--------------------------- BOOTSTRAP ---------------------------*/
+.row,.container,.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+/*------ ESTILOS FONT PARA BOOTSTRAP ------*/
+.fontBoot{
+    font-family: NotoSans-Regular !important;
+}
+.fontBoot h1{
+    font-size: 32px !important;
+}
+/*------ ESTILOS FONT PARA BOOTSTRAP CIERRE------*/
+
+/*--------- BOOTSTRAP NAV ---------*/
+.navbar{
+    background-color: #111111 !important;
+    height: 80px;
+}
+.navbar-toggler-icon{
+    color: white !important;
+    text-decoration: none !important;
+}
+.navbar-brand{
+    font-size: 35px;
+    padding: 0 100px;
+}
+.nav-link{
+    font-size: 17px;
+}
+.navbar a{
+    color: white;
+}
+.navbar-nav a:hover{
+    background-color: #1A191C !important;
+    color: white;
+    border-radius: 5px;
+}
+.bootColor{
+    background-color: #1A191C;
+    border-radius: 5px !important;
+}
+.navbar-collapse{
+    background-color: #111111;
+
+}
+/*--------- CIERRE BOOOTSTRAP NAV ---------*/
+
+/*-------- BOOTSTRAP NOSOTROS --------*/
+.bootHeader{
+    background-image: url(../img/fondoIndex2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 210px;
+}
+.bootHeader h1{
+    min-height: 200px;
+}
+.goals{
+    max-width: 500px;
+    border: solid black 2px;
+}
+.us{
+    background-color: #111111;
+    color: white;
+}
+/*--------- CIERRE BOOTSTRAP NOSOTROS ---------*/
+
+/*--------- BOOTSTRAP CONTACTO ----------*/
+.line{
+    background-color: #111111;
+    padding: 0px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 15px;
+}
+.contact fieldset{
+    padding: 20px; 
+    border: solid black 2px;   
+}
+.textContact{
+    height: 280px;
+    width: 100%;
+}
+.contact div{
+    border: solid black 2px;
+    padding: 15px;
+}
+/*--------- CIERRE BOOTSTRAP CONTACTO ----------*/
+
+/*---- BOOTSTRAP FOOTER ----*/
+.bootFooter{
+    background-color: #111111;
+    color: white;
+    font-size: 16px !important;
+}
+.rights{
+    background-color: #161519;
+    color: white;
+}
+/*---- CIERRE BOOTSTRAP FOOTER ----*/
+
+
 
