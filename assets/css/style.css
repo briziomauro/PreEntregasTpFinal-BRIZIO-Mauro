@@ -132,7 +132,7 @@ a.backColor,a:hover{
 }
 /*------- CIERRE BARRA DE NAVEGACION CSS RESPONSIVE --------*/
 
-/*------- PAGINA INICIO CSS ---------*/
+/*------- PAGINA INICIO CSS RESPONSIVE ---------*/
 .imgIndex{
     grid-area: header;
     background-image: url(../img/fondoIndex2.jpg);
@@ -145,7 +145,7 @@ a.backColor,a:hover{
 }
 .indexInfo{
     text-align: center;
-    color:  #040706;
+    color: white;
     font-size: 25px;
 }
 .mainGridIndex{
@@ -153,7 +153,7 @@ a.backColor,a:hover{
 }
 .mainIndex{
     display: flex;
-    height: 400px;
+    height: auto;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 10px;
@@ -165,7 +165,7 @@ a.backColor,a:hover{
 .prodIndex{
     display: inline-block;
     width: 250px;
-    height: 290px;
+    height: 300px;
     border: solid 2px #FFFEFE;
     border-radius: 8px;
     background-color: #FFFEFE;
@@ -173,9 +173,10 @@ a.backColor,a:hover{
     margin: 10px;
 }
 .prodIndex__img{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     text-align: center;
+    object-fit: cover;
 }
 .prodIndex__title{
     text-align: center;
@@ -222,7 +223,49 @@ a.backColor,a:hover{
     border-radius: 8px;
     width: 250px;   
 }
-/*--------- CIERRE INICIO CSS ---------*/
+@media(max-width:870px){
+    .prodIndex{
+        width: 200px;
+        height: 250px;
+    }
+    .benefits{
+        width: 200px;
+        height: 250px;
+    }
+}
+@media(max-width:600px){
+    .indexInfo{
+        font-size: 18px;
+    }
+    .indexInfo img{
+        width: 280px;
+        height: 230px;
+    }
+}
+@media(max-width:490px){
+    .mainIndex{
+        margin: 15px 0;
+    }
+    .indexInfo{
+        font-size: 15px;
+    }
+    .indexInfo img{
+        width: 250px;
+        height: 200px;
+    }
+    .titleSection{
+        font-size: 20px;
+    }
+    .linkProducts a{
+        width: 200px;
+        font-size: 12px;  
+    }
+    .prodIndex,.benefits{
+        width: 150px;
+        height: 260px;
+    }
+}
+/*--------- CIERRE INICIO CSS RESPONSIVE ---------*/
 
 /*-------- GRID PARA PAGINAS CSS -------*/
 .pageGrid{
