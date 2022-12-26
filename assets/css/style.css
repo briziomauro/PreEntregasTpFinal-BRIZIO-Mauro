@@ -48,7 +48,7 @@ body{
     font-family: NotoSans-Regular !important; 
 }
 /*----BARRA DE NAVEGACION----*/
-.navbar{
+.cssNavbar{
     grid-area: nav;
     display: flex;
     position: fixed;
@@ -64,16 +64,16 @@ body{
     line-height: 80px;
     padding: 0px 100px;
 }
-.navbar ul{
+.cssNavbar ul{
     margin-right: 25px;
 }
-.navbar ul li{
+.cssNavbar ul li{
     display: inline-block;
     list-style-type: none;
     line-height: 80px;
     margin: 0px 7px;
 }
-.navbar ul li a{
+.cssNavbar ul li a{
     text-decoration: none;
     color: white;
     font-size: 17px;
@@ -99,7 +99,7 @@ a.backColor,a:hover{
         font-size: 30px;
         padding-left: 50px;
     }
-    .navbar ul li a{
+    .cssNavbar ul li a{
         font-size: 15px;
     }
 }
@@ -120,13 +120,13 @@ a.backColor,a:hover{
         text-align: center;
         transition: all 0.5s;
     }
-    .navbar ul li{
+    .cssNavbar ul li{
         display: block;
     }
-    .navbar ul li a{
+    .cssNavbar ul li a{
         font-size: 18px;
     }
-    .navbar #check:checked ~ ul{
+    .cssNavbar #check:checked ~ ul{
         left: 0;
     }
 }
