@@ -43,7 +43,6 @@ main{
                           "header header header header"
                           "main   main   main   main"
                           "footer footer footer footer";
-
 }
 /*------ GRID PARA PAGINA INCIO CIERRE ------*/
 
@@ -109,7 +108,6 @@ a.backColor,a:hover{
     }
     .siteLogo{
         padding: 0 50px;
-
     }
     ul{
         position: fixed;
@@ -564,6 +562,10 @@ a.backColor,a:hover{
     text-align: center;
     color: white;
 }
+.rights{
+    background-color: #161519;
+    color: white;
+}
 @media(max-width:815px){
     .group1{
         width: 90%;
@@ -688,10 +690,14 @@ a.backColor,a:hover{
     background-color: #111111;
     color: white;
     font-size: 16px !important;
+
 }
-.rights{
-    background-color: #161519;
-    color: white;
+.bootFooter h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.bootFooter p{
+    font-size: 16px;
 }
 /*---- CIERRE BOOTSTRAP FOOTER ----*/
 
