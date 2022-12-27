@@ -172,6 +172,10 @@ a.backColor,a:hover{
     padding: 10px;
     margin: 10px;
 }
+.prodIndex:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
 .prodIndex__img{
     width: 70%;
     height: 70%;
@@ -325,6 +329,10 @@ a.backColor,a:hover{
     padding: 10px;
     margin: 10px;
 }
+.products:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
 .products__img{
     width: 100%;
     text-align: center;
@@ -397,6 +405,10 @@ a.backColor,a:hover{
     background-color: #FFFEFE;
     padding: 10px;
     margin: 10px;
+}
+.custom:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
 }
 .custom__img{
     width: 100%;
@@ -644,6 +656,7 @@ a.backColor,a:hover{
 }
 .goals{
     max-width: 500px;
+    background-color: white;
     border: solid black 2px;
 }
 .us{
