@@ -653,6 +653,7 @@ a.backColor,a:hover{
 }
 .bootHeader h1{
     min-height: 200px;
+    line-height: 200px;
 }
 .goals{
     max-width: 500px;
@@ -670,25 +671,15 @@ a.backColor,a:hover{
     background-color: #111111;
     padding: 0px;
 }
-.contact{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 15px;
+.bootForm{
+    max-width: 600px;
+    margin: auto;
 }
-.contact fieldset{
-    padding: 20px; 
-    border: solid black 2px;   
-}
-.textContact{
-    height: 280px;
-    width: 100%;
+.bootForm div textarea{
+    min-height: 200px !important;
 }
 .contact div{
     border: solid black 2px;
-    padding: 15px;
 }
 /*--------- CIERRE BOOTSTRAP CONTACTO ----------*/
 
