@@ -1,0 +1,58 @@
+.category{
+    text-align: center;
+    color: #FFFEFE;
+    background-color: #161519;
+    padding: 15px;
+    p{
+        display: inline-block;
+        padding: 5px 15px;
+        @media(max-width:435px){
+            font-size: 12px;
+        }
+    }
+}
+
+.sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFFEFE;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    div{
+        display: inline-block;
+        width: 250px;
+        border: solid 2px #FFFEFE;
+        border-radius: 8px;
+        background-color: #FFFEFE;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        @media(max-width:850px){
+            height: 300px;
+            width: 180px;
+        }
+        @media(max-width:640px){
+            width: 140px;
+        }
+        @media(max-width:520px){
+            width: 120px;
+        }
+        &:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+        }
+        img{
+            width: 100%;
+            text-align: center;
+        }
+        button{
+            padding: 3px;
+            border: none;
+            background-color: #FFFEFE;  
+        }
+    }
+}

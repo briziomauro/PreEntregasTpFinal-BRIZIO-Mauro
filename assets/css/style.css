@@ -375,12 +375,16 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 520px) {
+  .imgHead h1 {
+    font-size: 25px;
+  }
+}
 
 .pageMain {
   grid-area: main;
 }
 
-/*--------- PAGINA PRODUCTOS CSS RESPONSIVE ---------*/
 .category {
   text-align: center;
   color: #FFFEFE;
@@ -391,6 +395,11 @@ main {
 .category p {
   display: inline-block;
   padding: 5px 15px;
+}
+@media (max-width: 435px) {
+  .category p {
+    font-size: 12px;
+  }
 }
 
 .sales {
@@ -404,8 +413,7 @@ main {
   margin: 10px;
   text-align: center;
 }
-
-.products {
+.sales div {
   display: inline-block;
   width: 250px;
   border: solid 2px #FFFEFE;
@@ -413,57 +421,38 @@ main {
   background-color: #FFFEFE;
   padding: 10px;
   margin: 10px;
-}
-
-.products:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
-}
-
-.products__img {
-  width: 100%;
   text-align: center;
 }
-
-.products__title {
-  text-align: center;
-}
-
-.products__price {
-  text-align: center;
-}
-
-.products__btn {
-  padding: 3px;
-  border: none;
-  background-color: #FFFEFE;
-}
-
 @media (max-width: 850px) {
-  .products {
+  .sales div {
     height: 300px;
     width: 180px;
   }
 }
 @media (max-width: 640px) {
-  .products {
+  .sales div {
     width: 140px;
   }
 }
 @media (max-width: 520px) {
-  .imgHead h1 {
-    font-size: 25px;
-  }
-  .products {
+  .sales div {
     width: 120px;
   }
 }
-@media (max-width: 435px) {
-  .category p {
-    font-size: 12px;
-  }
+.sales div:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
-/*--------- CIERRE PRODUCTOS CSS RESPONSIVE -----------*/
+.sales div img {
+  width: 100%;
+  text-align: center;
+}
+.sales div button {
+  padding: 3px;
+  border: none;
+  background-color: #FFFEFE;
+}
+
 /*--------- MATES PERSONALIZADOS CSS RESPONSIVE ------------*/
 .titleEx {
   background-color: #161519;
