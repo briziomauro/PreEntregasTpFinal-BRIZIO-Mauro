@@ -6,6 +6,7 @@
 @import "navbar";
 @import "headerIndex";
 @import "inicio";
+@import "footer";
 
 
 
@@ -237,92 +238,7 @@
 }
 /*-------- CIERRE MATES PERSONALIZADOS CSS RESPONSIVE ---------*/
 
-/*-------- FOOTER RESPONSIVE CSS --------*/
-.pageFooter{
-    grid-area: footer;
-    background-color: #111111;
-}
-.group1{
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-evenly;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-.box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box figure img{
-    width: 250px;
-}
-.box h2{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.box p{
-    color: white;
-}
-.socials a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    background-color: #1A191C;
-    text-align: center;
-    margin-right: 10px;
-    transition: all 300ms ease;
-}
-.socials a:hover{
-    color: #558167;
-}
-.group2{
-    background-color: #161519;
-    padding: 15px 10px;
-    text-align: center;
-    color: white;
-}
-.rights{
-    background-color: #161519;
-    color: white;
-}
-@media(max-width:815px){
-    .group1{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-    .indexGrid{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 80px 900px 1fr 550px;
-        grid-template-areas:  "nav    nav    nav    nav"
-                              "header header header header"
-                              "main   main   main   main"
-                              "footer footer footer footer";
-    
-    }
-    .pageGrid{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 80px 200px 1fr 550px;
-        grid-template-areas:  "nav    nav    nav    nav"
-                              "header header header header"
-                              "main   main   main   main"
-                              "footer footer footer footer";
-    }
-}
-/*------- CIERRE FOOTER RESPONSIVE CSS --------*/
+
 
 
 
