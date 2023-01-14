@@ -1,0 +1,82 @@
+
+.mainGridIndex{
+    grid-area: main;
+    h2{
+        padding-top: 85px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+        @media(max-width:490px){
+            font-size: 20px;
+        }
+    }
+}
+.mainIndex{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    @media(max-width:490px){
+        margin: 15px 0;
+    }
+    div{
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        border: solid 2px #FFFEFE;
+        border-radius: 8px;
+        background-color: #FFFEFE;
+        padding: 10px;
+        margin: 10px;
+        &:hover{
+            transition: 0.3s;
+            transform: scale(1.2);
+        }
+        @media(max-width:870px){
+            width: 200px;
+            height: 250px;
+        }
+        @media(max-width:490px){
+            width: 200px;
+            height: 240px;
+        }
+        img{
+            width: 70%;
+            height: 70%;
+            text-align: center; 
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding: 5px;
+        }
+        button{
+            padding: 3px;
+            border: none;
+            background-color: #FFFEFE;
+        }
+    }
+}
+.linkProducts{
+    text-align: center;
+    a{
+        display: inline-block;
+        text-decoration: none;
+        background-color: #111111;
+        color: #FFFEFE;
+        padding: 15px;
+        border-radius: 8px;
+        width: 250px;
+        @media(max-width:490px){
+            width: 200px;
+            font-size: 12px;  
+        }   
+    }
+}

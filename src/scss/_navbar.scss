@@ -1,0 +1,82 @@
+.cssNavbar{
+    grid-area: nav;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #111111;
+    ul{
+        margin-right: 25px;
+        li{
+            display: inline-block;
+            list-style-type: none;
+            line-height: 80px;
+            margin: 0px 7px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 17px;
+                padding: 7px 15px;
+                border-radius: 5px;
+                .backColor,&:hover{
+                    background-color: #1A191C;
+                    transition: 0.5s;
+                }
+                @media (max-width:1060px){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .siteLogo{
+        display: block;
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0px 100px;
+        @media (max-width:1060px){
+            font-size: 30px;
+            padding-left: 50px;
+        }
+        @media(max-width:936px){
+            padding: 0 50px;
+        }
+    }
+}
+.backColor{
+    background-color: #1A191C;
+}
+.barsMenu{
+    display: none;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    @media(max-width:936px){
+        display: block;
+        margin-left: 40px;   
+    }
+}
+#check{
+    display: none;
+}
+@media(max-width:936px){
+    .cssNavbar ul{
+        position: fixed;
+        width: 100%;
+        background-color: #111111;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        li{
+            display: block;
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+    .cssNavbar #check:checked ~ ul{
+        left: 0;
+    }
+}

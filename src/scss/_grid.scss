@@ -1,0 +1,18 @@
+.indexGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 900px 1fr 320px;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "header header header header"
+                          "main   main   main   main"
+                          "footer footer footer footer";
+}
+.pageGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 200px 1fr 320px;
+    grid-template-areas:  "nav    nav    nav    nav"
+                          "header header header header"
+                          "main   main   main   main"
+                          "footer footer footer footer";
+}

@@ -1,0 +1,330 @@
+@import "reset";
+@import "fonts";
+@import "body";
+@import "main";
+@import "grid";
+@import "navbar";
+@import "headerIndex";
+@import "inicio";
+
+
+
+.imgHead{
+    grid-area: header;
+    background-image: url(../img/fondoIndex2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageMain{
+    grid-area: main;
+}
+
+/*--------- PAGINA PRODUCTOS CSS RESPONSIVE ---------*/
+.category{
+    text-align: center;
+    color: #FFFEFE;
+    background-color: #161519;
+    padding: 15px;
+}
+.category p{
+    display: inline-block;
+    padding: 5px 15px;
+}
+.sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFFEFE;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.products{
+    display: inline-block;
+    width: 250px;
+    border: solid 2px #FFFEFE;
+    border-radius: 8px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.products:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.products__img{
+    width: 100%;
+    text-align: center;
+}
+.products__title{
+    text-align: center;
+}
+.products__price{
+    text-align: center;
+}
+.products__btn{
+    padding: 3px;
+    border: none;
+    background-color: #FFFEFE;   
+}
+@media(max-width:850px){
+    .products{
+        height: 300px;
+        width: 180px;
+    }
+}
+@media(max-width:640px){
+    .products{
+        width: 140px;
+    }
+}
+@media(max-width:520px){
+    .imgHead h1{
+        font-size: 25px;
+    }
+    .products{
+        width: 120px;
+    }
+}
+@media(max-width:435px){
+    .category p{
+        font-size: 12px;
+    }
+}
+/*--------- CIERRE PRODUCTOS CSS RESPONSIVE -----------*/
+
+/*--------- MATES PERSONALIZADOS CSS RESPONSIVE ------------*/
+.titleEx{
+    background-color: #161519;
+    text-align: center;
+    padding: 15px;
+    color: #FFFEFE;
+}
+.customEx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.customText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.custom{
+    width: 250px;
+    background-color: #FFFEFE;
+    padding: 10px;
+    margin: 10px;
+}
+.custom:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.custom__img{
+    width: 100%;
+    text-align: center;
+}
+.custom__title{
+    text-align: center;
+}
+.custom__btn{
+    padding: 3px;
+    border: none;
+    background-color: #FFFEFE;   
+}
+.engraving{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+}
+.type1{
+    font-family: Anton;
+    font-size: 30px;
+    padding: 5px;
+}
+.type2{
+    font-family: Caveat;
+    font-size: 30px;
+    padding: 5px;
+}
+.type3{
+    font-family: Arimo;
+    font-size: 30px;
+    padding: 5px;
+}
+.type4{
+    font-family: Dancing_Script;
+    font-size: 30px;
+    padding: 5px;
+}
+.order{
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+@media(max-width:800px){
+    .order{
+        font-size: 20px;
+    }
+}
+@media(max-width:670px){
+    .titleEx{
+        font-size: 18px;
+    }
+    .custom{
+        width: 220px;
+        height: 270px;
+    }
+    .order{
+        font-size: 16px;
+    }
+    .customText p{
+        font-size: 25px;
+    }
+}
+@media(max-width:530px){
+    .order{
+        font-size: 13px;
+    }
+    .custom{
+        width: 160px;
+        height: 240px;
+    }
+    .custom__title{
+        font-size: 12px;
+    }
+    .engraving{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media(max-width:410px){
+    .custom{
+        width: 140px;
+    }
+    .engraving{
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+    }
+    .order{
+        font-size: 10px;
+    }
+    .customText p{
+        font-size: 20px;
+    }
+    .imgHead h1{
+        font-size: 20px;
+    }
+}
+/*-------- CIERRE MATES PERSONALIZADOS CSS RESPONSIVE ---------*/
+
+/*-------- FOOTER RESPONSIVE CSS --------*/
+.pageFooter{
+    grid-area: footer;
+    background-color: #111111;
+}
+.group1{
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-evenly;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box figure img{
+    width: 250px;
+}
+.box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.box p{
+    color: white;
+}
+.socials a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: #1A191C;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.socials a:hover{
+    color: #558167;
+}
+.group2{
+    background-color: #161519;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.rights{
+    background-color: #161519;
+    color: white;
+}
+@media(max-width:815px){
+    .group1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .indexGrid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 80px 900px 1fr 550px;
+        grid-template-areas:  "nav    nav    nav    nav"
+                              "header header header header"
+                              "main   main   main   main"
+                              "footer footer footer footer";
+    
+    }
+    .pageGrid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 80px 200px 1fr 550px;
+        grid-template-areas:  "nav    nav    nav    nav"
+                              "header header header header"
+                              "main   main   main   main"
+                              "footer footer footer footer";
+    }
+}
+/*------- CIERRE FOOTER RESPONSIVE CSS --------*/
+
+
+
+
+
