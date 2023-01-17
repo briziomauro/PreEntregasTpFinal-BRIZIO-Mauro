@@ -34,35 +34,35 @@
     </header>
 
     <main class="pageMain">
-        <p>.</p>
-        <div>
-            <form action="">
+        <hr>
+        <div class="contact">
+            <form>
                 <h2>DEJANOS TU MENSAJE</h2>
-                <div>
+                <div class="message">
                     <div>
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre" required>
+                        <input type="text"  name="nombre" id="name" placeholder=" " required>
+                        <label for="name">Nombre:</label>
+                        <span></span>
                     </div>
                     <div>
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido" required>
+                        <input type="text" name="apellido" id="lastName" placeholder=" " required>
+                        <label for="lastName">Apellido:</label>
+                        <span></span>
                     </div>
-                </div>
-                <div>
-                    <label for="email" class="form-label">Ingrese su Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
-                </div>
-                <div>
-                    <label for="Mensaje" class="form-label">Escribe su mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder=" " required>
+                        <label for="email">Email:</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <textarea name="mensaje" id="mensaje" placeholder="Ingrese su Mensaje" required></textarea>
+                    </div>
+                    <input class="submit" type="submit" value="Enviar">
                 </div>
             </form>
-            <div>
+            <div class="map">
                 <h2>ENCONTRANOS EN:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.50675382286653!2d-60.654731540811895!3d-32.94958287625976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab6a51aa8ce7%3A0x1adb7c9994c0fc61!2sBv.%20Oro%C3%B1o%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1669144457955!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.74394010578!2d-60.76667909735529!3d-32.95204571143333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1673934782301!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </main>

@@ -609,6 +609,97 @@ main {
   font-size: 18px;
 }
 
+hr {
+  background-color: #111111;
+  height: 25px;
+  width: 100%;
+  border: none;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  padding: 30px;
+}
+.contact form {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.contact form h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.contact form .message {
+  margin-top: 20px;
+  display: grid;
+  gap: 30px;
+}
+.contact form .message div {
+  position: relative;
+}
+.contact form .message input {
+  width: 100%;
+  background: none;
+  color: #1A191C;
+  font-size: 14px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #558167;
+  font-family: NotoSans-Regular;
+}
+.contact form .message input:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #558167;
+}
+.contact form .message input:not(:-ms-input-placeholder) + label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #558167;
+}
+.contact form .message input:focus + label, .contact form .message input:not(:placeholder-shown) + label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #558167;
+}
+.contact form .message label {
+  color: #1A191C;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(5px);
+  transition: transform 0.5s, color 0.3s;
+}
+.contact form .message .submit {
+  background-color: #1A191C;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contact form .message textarea {
+  width: 100%;
+  height: 75px;
+  padding: 8px;
+  font-family: NotoSans-Regular;
+}
+.contact .map {
+  padding: 30px 20px;
+}
+.contact .map h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.contact .map iframe {
+  height: 90%;
+  width: auto;
+}
+
 .pageFooter {
   grid-area: footer;
   background-color: #111111;
