@@ -186,6 +186,7 @@ main {
   text-align: center;
   color: white;
   font-size: 25px;
+  -webkit-text-stroke: 0.01px #1A191C;
 }
 @media (max-width: 600px) {
   .indexInfo {
@@ -576,7 +577,7 @@ main {
   justify-content: space-around;
 }
 .us section div {
-  width: 45%;
+  width: 40%;
   padding: 15px;
 }
 @media (max-width: 600px) {

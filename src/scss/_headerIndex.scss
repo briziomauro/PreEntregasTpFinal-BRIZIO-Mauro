@@ -12,6 +12,7 @@
     text-align: center;
     color: white;
     font-size: 25px;
+    -webkit-text-stroke: .01px $colorTerciario;
     @media(max-width:600px){
         font-size: 18px;
     }
