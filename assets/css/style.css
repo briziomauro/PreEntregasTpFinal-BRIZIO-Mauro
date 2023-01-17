@@ -353,13 +353,12 @@ main {
 }
 
 .group2 {
-  background-color: #161519;
+  background-color: #1A191C;
   padding: 15px 10px;
   text-align: center;
   color: white;
 }
 .group2 p {
-  background-color: #161519;
   color: white;
 }
 
@@ -393,7 +392,7 @@ main {
 .category {
   text-align: center;
   color: #FFFEFE;
-  background-color: #161519;
+  background-color: #111111;
   padding: 15px;
 }
 .category p {
@@ -458,7 +457,7 @@ main {
 }
 
 .titleEx {
-  background-color: #161519;
+  background-color: #111111;
   text-align: center;
   padding: 15px;
   color: #FFFEFE;

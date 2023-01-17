@@ -1,5 +1,5 @@
 .titleEx{
-    background-color: #161519;
+    background-color: $colorPrincipal;
     text-align: center;
     padding: 15px;
     color: #FFFEFE;
@@ -13,13 +13,13 @@
     align-items: center;
     column-gap: 10px;
     flex-wrap: wrap;
-    background-color: #FFFEFE;
+    background-color: $colorSecundario;
     padding: 10px;
     margin: 10px;
     text-align: center;
     div{
         width: 250px;
-        background-color: #FFFEFE;
+        background-color: $colorSecundario;
         padding: 10px;
         margin: 10px;
         @media(max-width:670px){
@@ -50,7 +50,7 @@
         button{
             padding: 3px;
             border: none;
-            background-color: #FFFEFE;   
+            background-color: $colorSecundario;   
         }
     }
 
@@ -61,7 +61,7 @@
     align-items: center;
     column-gap: 10px;
     flex-wrap: wrap;
-    background-color: #FFFEFE;
+    background-color: $colorSecundario;
     padding: 10px;
     margin: 10px;
     text-align: center;

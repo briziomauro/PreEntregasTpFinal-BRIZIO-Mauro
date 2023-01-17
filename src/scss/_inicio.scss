@@ -17,7 +17,7 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 10px;
-    background-color: #FFFEFE;
+    background-color: $colorSecundario;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -28,9 +28,9 @@
         display: inline-block;
         width: 250px;
         height: 300px;
-        border: solid 2px #FFFEFE;
+        border: solid 2px $colorSecundario;
         border-radius: 8px;
-        background-color: #FFFEFE;
+        background-color: $colorSecundario;
         padding: 10px;
         margin: 10px;
         &:hover{
@@ -60,7 +60,7 @@
         button{
             padding: 3px;
             border: none;
-            background-color: #FFFEFE;
+            background-color: $colorSecundario;
         }
     }
 }
@@ -69,8 +69,8 @@
     a{
         display: inline-block;
         text-decoration: none;
-        background-color: #111111;
-        color: #FFFEFE;
+        background-color: $colorPrincipal;
+        color: $colorSecundario;
         padding: 15px;
         border-radius: 8px;
         width: 250px;

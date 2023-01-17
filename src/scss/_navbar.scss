@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    background-color: #111111;
+    background-color: $colorPrincipal;
     ul{
         margin-right: 25px;
         li{
@@ -19,7 +19,7 @@
                 padding: 7px 15px;
                 border-radius: 5px;
                 .backColor,&:hover{
-                    background-color: #1A191C;
+                    background-color: $colorTerciario;
                     transition: 0.5s;
                 }
                 @media (max-width:1060px){
@@ -44,7 +44,7 @@
     }
 }
 .backColor{
-    background-color: #1A191C;
+    background-color: $colorTerciario;
 }
 .barsMenu{
     display: none;
@@ -64,7 +64,7 @@
     .cssNavbar ul{
         position: fixed;
         width: 100%;
-        background-color: #111111;
+        background-color: $colorPrincipal;
         top: 80px;
         left: -100%;
         text-align: center;

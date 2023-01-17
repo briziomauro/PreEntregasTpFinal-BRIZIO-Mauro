@@ -1,6 +1,6 @@
 .pageFooter{
     grid-area: footer;
-    background-color: #111111;
+    background-color: $colorPrincipal;
 }
 .group1{
     width: 100%;
@@ -47,22 +47,21 @@
         height: 45px;
         line-height: 45px;
         color: white;
-        background-color: #1A191C;
+        background-color: $colorTerciario;
         text-align: center;
         margin-right: 10px;
         transition: all 300ms ease;
         &:hover{
-            color: #558167;
+            color: $colorLogo;
         }
     }
 }
 .group2{
-    background-color: #161519;
+    background-color: $colorTerciario;
     padding: 15px 10px;
     text-align: center;
     color: white;
     p{
-        background-color: #161519;
         color: white;
     }
 }

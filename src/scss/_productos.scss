@@ -1,7 +1,7 @@
 .category{
     text-align: center;
-    color: #FFFEFE;
-    background-color: #161519;
+    color: $colorSecundario;
+    background-color: $colorPrincipal;
     padding: 15px;
     p{
         display: inline-block;
@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #FFFEFE;
+    background-color: $colorSecundario;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -25,9 +25,9 @@
     div{
         display: inline-block;
         width: 250px;
-        border: solid 2px #FFFEFE;
+        border: solid 2px $colorSecundario;
         border-radius: 8px;
-        background-color: #FFFEFE;
+        background-color: $colorSecundario;
         padding: 10px;
         margin: 10px;
         text-align: center;
@@ -52,7 +52,7 @@
         button{
             padding: 3px;
             border: none;
-            background-color: #FFFEFE;  
+            background-color: $colorSecundario;  
         }
     }
 }
