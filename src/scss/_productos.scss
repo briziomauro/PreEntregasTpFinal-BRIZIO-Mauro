@@ -13,15 +13,7 @@
 }
 
 .sales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: $colorSecundario;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+    @extend %tarjeta;
     div{
         display: inline-block;
         width: 250px;
@@ -50,9 +42,7 @@
             text-align: center;
         }
         button{
-            padding: 3px;
-            border: none;
-            background-color: $colorSecundario;  
+            @include button ($colorSecundario,$colorPrincipal)
         }
     }
 }

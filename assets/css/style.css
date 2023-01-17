@@ -24,6 +24,17 @@
   font-family: Dancing_Script;
   src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
 }
+.customEx, .sales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #FFFEFE;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
 body {
   position: relative;
   display: grid;
@@ -270,13 +281,17 @@ main {
   padding: 5px;
 }
 .mainIndex div button {
-  padding: 3px;
+  width: 80%;
+  padding: 6px;
   border: none;
-  background-color: #FFFEFE;
+  border-radius: 6px;
+  background-color: #111111;
+  color: white;
 }
 
 .linkProducts {
   text-align: center;
+  margin-top: 30px;
 }
 .linkProducts a {
   display: inline-block;
@@ -292,6 +307,9 @@ main {
     width: 200px;
     font-size: 12px;
   }
+}
+.linkProducts a:hover {
+  background-color: #1A191C;
 }
 
 .pageFooter {
@@ -405,17 +423,6 @@ main {
   }
 }
 
-.sales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #FFFEFE;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
 .sales div {
   display: inline-block;
   width: 250px;
@@ -451,9 +458,12 @@ main {
   text-align: center;
 }
 .sales div button {
-  padding: 3px;
+  width: 80%;
+  padding: 6px;
   border: none;
+  border-radius: 6px;
   background-color: #FFFEFE;
+  color: #111111;
 }
 
 .titleEx {
@@ -468,18 +478,6 @@ main {
   }
 }
 
-.customEx {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  flex-wrap: wrap;
-  background-color: #FFFEFE;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
 .customEx div {
   width: 250px;
   background-color: #FFFEFE;
@@ -513,6 +511,7 @@ main {
 }
 .customEx div h3 {
   text-align: center;
+  margin-bottom: 5px;
 }
 @media (max-width: 530px) {
   .customEx div h3 {
@@ -520,9 +519,12 @@ main {
   }
 }
 .customEx div button {
-  padding: 3px;
+  width: 80%;
+  padding: 6px;
   border: none;
-  background-color: #FFFEFE;
+  border-radius: 6px;
+  background-color: #1A191C;
+  color: white;
 }
 
 .engraving {
