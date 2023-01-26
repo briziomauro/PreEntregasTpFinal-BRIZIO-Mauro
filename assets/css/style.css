@@ -184,6 +184,7 @@ main {
 @media (max-width: 640px) {
   .imgIndex {
     background-image: url(../img/fondoMobileRe.jpg);
+    height: 100vh;
   }
 }
 
