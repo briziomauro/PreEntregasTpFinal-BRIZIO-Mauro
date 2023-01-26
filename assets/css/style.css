@@ -180,12 +180,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 900px;
 }
 @media (max-width: 640px) {
   .imgIndex {
-    background-image: url(../img/fondoMobileRe.jpg);
+    background-image: url(../img/fondoMobile.jpg);
   }
 }
 
