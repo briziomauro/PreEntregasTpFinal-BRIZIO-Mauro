@@ -18,13 +18,6 @@
             width: 220px;
             height: 270px;
         }
-        @media(max-width:530px){
-            width: 160px;
-            height: 240px;
-        }
-        @media(max-width:410px){
-            width: 140px;
-        }
         &:hover{
             transition: 0.3s;
             transform: scale(1.1);
@@ -64,7 +57,7 @@
             width: 70px;
             height: 70px; 
         }
-        @media(max-width:410px){
+        @media(max-width:430px){
             width: 55px;
             height: 55px;
             padding: 5px;
