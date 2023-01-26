@@ -181,16 +181,47 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 470px) {
+  .imgIndex {
+    background-image: url(../img/fondoMobile.jpg);
+  }
+}
 
 .indexInfo {
   text-align: center;
-  color: white;
-  font-size: 25px;
-  -webkit-text-stroke: 0.01px #1A191C;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 @media (max-width: 600px) {
   .indexInfo {
     font-size: 18px;
+  }
+}
+.indexInfo p {
+  color: white;
+  font-size: 60px;
+}
+@media (max-width: 600px) {
+  .indexInfo p {
+    font-size: 45px;
+  }
+}
+@media (max-width: 490px) {
+  .indexInfo p {
+    font-size: 35px;
+  }
+}
+.indexInfo h1 {
+  color: white;
+  font-weight: lighter;
+}
+@media (max-width: 600px) {
+  .indexInfo h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 490px) {
+  .indexInfo h1 {
+    font-size: 25px;
   }
 }
 @media (max-width: 600px) {
@@ -203,11 +234,6 @@ main {
   .indexInfo img {
     width: 250px;
     height: 200px;
-  }
-}
-@media (max-width: 490px) {
-  .indexInfo {
-    font-size: 15px;
   }
 }
 
@@ -266,7 +292,7 @@ main {
 @media (max-width: 490px) {
   .mainIndex div {
     width: 200px;
-    height: 240px;
+    height: 235px;
   }
 }
 .mainIndex div img {
@@ -325,9 +351,19 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 470px) {
+  .imgHead {
+    background-image: url(../img/fondoMobile.jpg);
+  }
+}
 @media (max-width: 520px) {
   .imgHead h1 {
     font-size: 25px;
+  }
+}
+@media (max-width: 470px) {
+  .imgHead h1 {
+    color: white;
   }
 }
 @media (max-width: 410px) {

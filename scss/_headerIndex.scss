@@ -7,14 +7,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width:470px){
+        background-image: url(../img/fondoMobile.jpg);
+    }
 }
 .indexInfo{
     text-align: center;
-    color: white;
-    font-size: 25px;
-    -webkit-text-stroke: .01px $colorTerciario;
+    text-shadow: black 0.1em 0.1em 0.2em;
     @media(max-width:600px){
         font-size: 18px;
+    }
+    p{
+        color: white;
+        font-size: 60px;
+        @media(max-width:600px){
+            font-size: 45px;
+        }
+        @media(max-width:490px){
+            font-size: 35px;
+        }
+    }
+    h1{
+        color: white;
+        font-weight: lighter;
+        @media(max-width:600px){
+            font-size: 30px;
+        }
+        @media(max-width:490px){
+            font-size: 25px;
+        }
     }
     img{
         @media(max-width:600px){
@@ -25,8 +46,5 @@
             width: 250px;
             height: 200px;
         }
-    }
-    @media(max-width:490px){
-        font-size: 15px;
     }
 }
